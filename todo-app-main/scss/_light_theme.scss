@@ -1,4 +1,8 @@
 .light {
+  label.active {
+    color: $light-border-color !important;
+    text-decoration: line-through;
+  }
   .custom-checkbox {
     .checkmark {
       border: 1px solid $light-border-color;

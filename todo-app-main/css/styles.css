@@ -176,6 +176,11 @@ body {
           transform: rotate(45deg);
 }
 
+.dark label.active {
+  color: #777a92 !important;
+  text-decoration: line-through;
+}
+
 .dark .custom-checkbox .checkmark {
   border: 1px solid #393a4c;
 }
@@ -231,6 +236,11 @@ body {
 
 .dark footer p a:hover {
   color: #e4e5f1;
+}
+
+.light label.active {
+  color: #d2d3db !important;
+  text-decoration: line-through;
 }
 
 .light .custom-checkbox .checkmark {

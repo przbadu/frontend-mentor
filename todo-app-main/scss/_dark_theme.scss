@@ -1,4 +1,8 @@
 .dark {
+  label.active {
+    color: $dark-highlighted-color !important;
+    text-decoration: line-through;
+  }
   .custom-checkbox {
     .checkmark {
       border: 1px solid $dark-inactive-check-border;
