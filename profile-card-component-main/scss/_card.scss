@@ -1,0 +1,87 @@
+.card {
+  width: 320px;
+  border-radius: 15px;
+  background-color: $white;
+  overflow: hidden;
+
+  .card-header {
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+
+    .rounded {
+      background: $white;
+      padding: 5px;
+      border-radius: 50%;
+      position: relative;
+      top: 50px;
+    }
+
+    .card-img {
+      border-radius: 50%;
+      width: 96px;
+      height: 96px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .card-body {
+    margin-top: 50px;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+
+      .name {
+        font-weight: 700;
+      }
+
+      .age {
+        color: $dark-grayish-blue;
+        padding-left: 10px;
+      }
+
+      .location {
+        color: $dark-grayish-blue;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .card-footer {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid $border-color;
+    display: flex;
+    justify-content: space-evenly;
+
+    .stats {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      .number {
+        font-weight: 700;
+      }
+      .title {
+        margin-top: 5px;
+        font-size: 10px;
+        color: $dark-grayish-blue;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #fdfdfd;
+  font-family: Heebo, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .heading,
+.container .subheading {
+  text-align: center;
+}
+.container .subheading {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.container ul.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.container ul.grid li {
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
+  width: 350px;
+}
+.container ul.grid img {
+  display: block;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+ul.grid li a {
+  text-decoration: none;
+  color: #333;
+}
+ul.grid li .heading {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px;
+}
+ul.grid li .links {
+  display: flex;
+  align-items: center;
+  justify-items: flex-start;
+  padding: 15px;
+}
+ul.grid li .links a {
+  background: tomato;
+  color: white;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+svg.icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 480px) {
+  .container ul.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .container ul.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}

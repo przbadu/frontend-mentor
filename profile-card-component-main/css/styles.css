@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #2d3248;
+}
+
+body {
+  overflow: hidden;
+  background: url(../images/bg-pattern-top.svg) top -64vh left -13.4vw no-repeat, url(../images/bg-pattern-bottom.svg) bottom -57vh right -14.4vw no-repeat;
+  background-color: #19a2ae;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #19a2ae;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background: url(../images/bg-pattern-top.svg) top -50vh left -96vh no-repeat, url(../images/bg-pattern-bottom.svg) bottom -67vh right -80vh no-repeat;
+    background-color: #19a2ae;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.card {
+  width: 320px;
+  border-radius: 15px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.card .card-header {
+  background-image: url(../images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 150px;
+}
+
+.card .card-header .rounded {
+  background: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  position: relative;
+  top: 50px;
+}
+
+.card .card-header .card-img {
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .card-body {
+  margin-top: 50px;
+}
+
+.card .card-body .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .card-body .row .name {
+  font-weight: 700;
+}
+
+.card .card-body .row .age {
+  color: #6a6f81;
+  padding-left: 10px;
+}
+
+.card .card-body .row .location {
+  color: #6a6f81;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.card .card-footer {
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card .card-footer .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.card .card-footer .stats .number {
+  font-weight: 700;
+}
+
+.card .card-footer .stats .title {
+  margin-top: 5px;
+  font-size: 10px;
+  color: #6a6f81;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=styles.css.map */
