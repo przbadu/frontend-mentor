@@ -11,7 +11,7 @@ body.dark {
 }
 body.light {
   background-color: $light-primary;
-  color: $light-text-primary-color;
+  color: $dark-text-primary-color;
 }
 
 body {
@@ -76,6 +76,12 @@ body {
     justify-content: space-between;
     width: 100%;
     padding: 10px 20px;
+
+    .filters {
+      a {
+        font-weight: bold;
+      }
+    }
 
     a {
       text-decoration: none;

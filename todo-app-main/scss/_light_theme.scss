@@ -1,31 +1,37 @@
 .light {
+  .custom-checkbox {
+    .checkmark {
+      border: 1px solid $light-border-color;
+    }
+  }
+
   .container {
     .add-todo-container {
-      background-color: $dark-secondary;
+      background-color: $light-secondary;
       input {
-        color: $dark-text-primary-color;
+        color: $light-text-primary-color;
         caret-color: $bright-blue;
       }
     }
     .todo-list-container {
-      background-color: $dark-secondary;
+      background-color: $white;
       .todo-list-item {
-        border-bottom: 1px solid $dark-inactive-check-border;
+        border-bottom: 1px solid $light-border-color;
         label {
-          color: $dark-text-secondary-color;
+          color: $light-text-primary-color;
         }
       }
     }
   }
   .todo-filters-container {
-    background-color: $dark-secondary;
+    background-color: $white;
     .items-count {
-      color: $dark-highlighted-color;
+      color: $light-text-secondary-color;
     }
     a {
-      color: $dark-highlighted-color;
+      color: $light-text-secondary-color;
       &:hover {
-        color: $dark-text-primary-color;
+        color: $light-text-primary-color;
       }
       &.active {
         color: $bright-blue;
@@ -33,12 +39,12 @@
     }
   }
   footer {
-    color: $dark-item-border-color;
+    color: $light-text-secondary-color;
     p {
       a {
-        color: $dark-highlighted-color;
+        color: $light-text-secondary-color;
         &:hover {
-          color: $dark-text-primary-color;
+          color: $light-text-primary-color;
         }
       }
     }

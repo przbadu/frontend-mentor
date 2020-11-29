@@ -1,4 +1,10 @@
 .dark {
+  .custom-checkbox {
+    .checkmark {
+      border: 1px solid $dark-inactive-check-border;
+    }
+  }
+
   .container {
     .add-todo-container {
       background-color: $dark-secondary;
