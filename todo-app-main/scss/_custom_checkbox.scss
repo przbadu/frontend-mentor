@@ -15,6 +15,21 @@
     cursor: pointer;
     height: 0;
     width: 0;
+    &:checked {
+      ~ .checkmark {
+        background: $check-background;
+        &:after {
+          display: block;
+        }
+      }
+    }
+  }
+  &:hover {
+    input {
+      ~ .checkmark {
+        border: 1px solid $check-background;
+      }
+    }
   }
 
   // create a custom checkbox
@@ -26,5 +41,19 @@
     width: 24px;
     border: 1px solid $dark-inactive-check-border;
     border-radius: 50%;
+
+    // create the checkmark/indicator (hidden when not checked)
+    &:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      content: "";
+      position: absolute;
+      display: none;
+      border: solid white;
+      border-width: 0 1px 1px 0;
+      transform: rotate(45deg);
+    }
   }
 }
