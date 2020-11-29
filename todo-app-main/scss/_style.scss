@@ -45,7 +45,6 @@ body {
   }
 
   .add-todo-container {
-    background-color: $dark-secondary;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
@@ -61,18 +60,13 @@ body {
       background-color: transparent;
       border: none;
       outline: none;
-      color: $dark-text-primary-color;
-      caret-color: $bright-blue;
     }
   }
   .todo-list-container {
-    background-color: $dark-secondary;
     .todo-list-item {
       padding: 20px 20px 5px 20px;
-      border-bottom: 1px solid $dark-inactive-check-border;
       label {
         font-size: 14px;
-        color: $dark-text-secondary-color;
       }
     }
   }
@@ -81,38 +75,20 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    background-color: $dark-secondary;
     padding: 10px 20px;
 
-    .items-count {
-      color: $dark-highlighted-color;
-    }
     a {
       text-decoration: none;
-      color: $dark-highlighted-color;
       padding-left: 5px;
       padding-right: 5px;
-      &:hover {
-        color: $dark-text-primary-color;
-      }
-    }
-    a.active {
-      color: $bright-blue;
     }
   }
 
   footer {
     text-align: center;
     margin-top: 50px;
-    color: $dark-item-border-color;
     p {
       margin-top: 10px;
-      a {
-        color: $dark-highlighted-color;
-        &:hover {
-          color: $dark-text-primary-color;
-        }
-      }
     }
   }
 }
