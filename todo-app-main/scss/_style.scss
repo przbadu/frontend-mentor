@@ -23,6 +23,9 @@ body {
   background-repeat: no-repeat;
   font-family: $font-family;
 }
+.hidden {
+  display: none;
+}
 .container {
   width: 450px;
   height: 100vh;
@@ -64,9 +67,17 @@ body {
   }
   .todo-list-container {
     .todo-list-item {
+      display: flex;
+      justify-content: space-between;
       padding: 20px 20px 5px 20px;
       label {
         font-size: 14px;
+      }
+      .delete {
+        svg {
+          width: 18px;
+          height: 18px;
+        }
       }
     }
   }

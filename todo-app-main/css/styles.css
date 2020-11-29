@@ -27,6 +27,10 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
   width: 450px;
   height: 100vh;
@@ -83,11 +87,22 @@ body {
 }
 
 .container .todo-list-container .todo-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px 20px 5px 20px;
 }
 
 .container .todo-list-container .todo-list-item label {
   font-size: 14px;
+}
+
+.container .todo-list-container .todo-list-item .delete svg {
+  width: 18px;
+  height: 18px;
 }
 
 .container .todo-filters-container {
