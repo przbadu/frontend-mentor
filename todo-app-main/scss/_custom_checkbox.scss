@@ -1,0 +1,30 @@
+// checkbox container
+.custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+
+  // hide the browser's default checkbox
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  // create a custom checkbox
+  .checkmark {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border: 1px solid $dark-inactive-check-border;
+    border-radius: 50%;
+  }
+}

@@ -1,3 +1,6 @@
+// font-family
+$font-family: "Josefin Sans", sans-serif;
+
 // sizes
 $mobile: 375px;
 $tablet: 768px;
@@ -9,20 +12,17 @@ $check-background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
 $white: #fff;
 
 // light theme
-$light-bg-color: hsl(0, 0%, 98%);
-$lt-very-light-grayish-blue: hsl(236, 33%, 92%);
+$light-primary: hsl(0, 0%, 98%);
+$light-secondary: hsl(236, 33%, 92%);
 $lt-light-grayish-blue: hsl(233, 11%, 84%);
 $lt-dark-grayish-blue: hsl(236, 9%, 61%);
-$lt-very-dark-grayish-blue: hsl(235, 19%, 35%);
+$light-text-primary-color: hsl(235, 19%, 35%);
 
 // dark theme
-$dark-bg-color: hsl(235, 21%, 11%);
-$dt-very-dark-desaturated-blue: hsl(235, 24%, 19%);
-$dt-light-grayish-blue: hsl(234, 39%, 85%);
-$dt-light-grayish-blue-hover: hsl(236, 33%, 92%);
-$dt-dark-grayish-blue: hsl(234, 11%, 52%);
-$dt-very-dark-grayish-blue: hsl(233, 14%, 35%);
-$dt-very-dark-grayish-blue: hsl(237, 14%, 26%);
-
-// font-family
-$font-family: "Josefin Sans", sans-serif;
+$dark-primary: hsl(235, 21%, 11%);
+$dark-secondary: hsl(235, 24%, 19%);
+$dark-text-primary-color: hsl(236, 33%, 92%);
+$dark-text-secondary-color: hsl(234, 39%, 85%);
+$dark-highlighted-color: hsl(234, 11%, 52%);
+$dark-item-border-color: hsl(233, 14%, 35%);
+$dark-inactive-check-border: hsl(237, 14%, 26%);

@@ -2,12 +2,108 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font-family;
+}
+
+body.dark {
+  background-color: $dark-primary;
+  color: $dark-text-primary-color;
+}
+body.light {
+  background-color: $light-primary;
+  color: $light-text-primary-color;
 }
 
 body {
+  font-size: 14px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-image: url(../images/bg-desktop-dark.jpg);
-  background-repeat: no-repeat;
   background-size: 100% 40%;
+  background-repeat: no-repeat;
+  font-family: $font-family;
+}
+.container {
+  width: 450px;
+  height: 100vh;
+  margin: 0 auto;
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 10px;
+    }
+    img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  .add-todo-container {
+    background-color: $dark-secondary;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+
+    input {
+      margin-left: 10px;
+      padding-top: 5px;
+      flex-grow: 1;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: $dark-text-primary-color;
+      caret-color: $bright-blue;
+    }
+  }
+  .todo-list-container {
+    background-color: $dark-secondary;
+    .todo-list-item {
+      padding: 20px 20px 5px 20px;
+      border-bottom: 1px solid $dark-inactive-check-border;
+      label {
+        font-size: 14px;
+        color: $dark-text-secondary-color;
+      }
+    }
+  }
+  .todo-filters-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $dark-secondary;
+    padding: 10px 20px;
+
+    .items-count {
+      color: $dark-highlighted-color;
+    }
+    a {
+      text-decoration: none;
+      color: $dark-highlighted-color;
+      padding-left: 5px;
+      padding-right: 5px;
+      &:hover {
+        color: $dark-text-primary-color;
+      }
+    }
+    a.active {
+      color: $bright-blue;
+    }
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    color: $dark-item-border-color;
+  }
 }
